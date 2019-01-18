@@ -167,8 +167,27 @@
     echo "<br>";
     echo str_replace("trupti","tuti","hello trupti");
     echo "<br>";
-    echo "<br>";
 
+    #constants
+
+    #case sensitive
+    echo "<br>";
+    define("welcome","The PHP Learners ");
+    echo welcome;
+
+    #case insensitive
+    echo "<br>";
+    define("Welcome","The PHP Learners ",true);
+    echo welcome;
+ 
+    echo "<br>";
+    define("welcome","The PHP Learners ");
+
+    function check(){
+        echo welcome;
+    }
+    
+    check();
     
 
 
