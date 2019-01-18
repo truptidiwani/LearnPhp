@@ -186,9 +186,159 @@
     function check(){
         echo welcome;
     }
-    
     check();
     
+    #OPERATORS
+
+    #Arithmetic operators
+    echo "<br>";
+    $n1=23;
+    $n2=45;
+    echo $n1;
+    echo "<br>";
+    echo $n2;
+    echo "<br>";
+    echo $n1+$n2; //addition
+    echo "<br>";
+    echo $n1-$n2;//subtraction
+    echo "<br>";
+    echo $n1*$n2;//multiplication
+    echo "<br>";
+    echo $n1/$n2;//division
+    echo "<br>";
+    echo $n1%$n2;//modulus
+    echo "<br>";
+    echo $n1**$n2;//exponentiation
+    echo "<br>";
+    
+    #Assignment operators
+    $ass=20;
+    echo $ass;
+    echo "<br>";
+    $ass+=70;
+    echo $ass;
+    echo "<br>";
+    $ass-=50;
+    echo $ass;
+    echo "<br>";
+    $ass*=20;
+    echo $ass;
+    echo "<br>";
+    $ass/=10;
+    echo $ass;
+    echo "<br>";
+    $ass%=50;
+    echo $ass;
+    echo "<br>";
+
+    #comparison operators
+    $cmp1=100;
+    $cmp2="500";
+    $cmp3=100;
+    var_dump($cmp1==$cmp2);
+    echo "<br>";
+    var_dump($cmp1==$cmp3);
+    echo "<br>";
+    var_dump($cmp1===$cmp3);
+    echo "<br>";
+    var_dump($cmp1!=$cmp3);
+    echo "<br>";
+    var_dump($cmp1<>$cmp3);
+    echo "<br>";
+    var_dump($cmp1!==$cmp3);
+    echo "<br>";
+    var_dump($cmp1>$cmp3);
+    echo "<br>";
+    var_dump($cmp1<$cmp3);
+    echo "<br>";
+    var_dump($cmp1>=$cmp3);
+    echo "<br>";
+    var_dump($cmp1<=$cmp3);
+    echo "<br>";
+
+
+    #Increment Decrement Operator
+    echo "<br>";
+    $inc=100;
+    echo ++$inc;//101
+    echo "<br>";
+    $inc1=100;
+    echo $inc1++;//100
+    echo "<br>";
+    $inc2=100;
+    echo $inc2--;//100
+    echo "<br>";
+    $inc3=100;
+    echo --$inc3;//99
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
+    
+    #Logical Operators
+
+    $log1=20;
+    $log2=40;
+    
+    if($log1==20 and $log2==40){
+        echo "and";  
+    }
+    echo "<br>";
+
+    if($log1==20 or $log2==40){
+        echo "or";
+    }
+    echo "<br>";
+
+    if($log1==20 xor $log2==40){
+        echo "xor";
+    }
+    echo "<br>";
+
+    if($log1==20 && $log2==40){
+        echo "&&";
+    }
+    echo "<br>";
+
+    if($log1==20 || $log2==40){
+        echo "||";
+    }
+    echo "<br>";
+
+    if($log1!==40){
+        echo "!";
+    }
+    echo "<br>";
+
+
+    #String operator
+    $con1="Hello";
+    $con2="Trupti";
+    echo $con1 . $con2;
+    echo "<br>";
+    $con1 .= $con2;
+    echo $con1;
+        echo "<br>";
+    echo "<br>";
+
+    #Array Operators
+    echo "<br>";
+    $arr1= array("a"=>"black","b"=>"white");
+    $arr2=array("c"=>"grey","d"=>"navyblue");
+    print_r($arr1+$arr2);
+    echo "<br>";
+    var_dump($arr1==$arr2);
+    echo "<br>";
+    var_dump($arr1===$arr2);
+    echo "<br>";
+    var_dump($arr1!=$arr2);
+    echo "<br>";
+    var_dump($arr1<>$arr2);
+    echo "<br>";
+    var_dump($arr1!==$arr2);
+    echo "<br>";
+    echo "<br>";
+    echo "<br>";
 
 
 
