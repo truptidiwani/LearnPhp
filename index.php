@@ -340,8 +340,134 @@
     echo "<br>";
     echo "<br>";
 
+     #if...else...elseif Statements
+
+     $t=date("hour");
+     if ($t<"10"){
+         echo "have a good day!";
+     }
+      echo "<br>";
+     if($t<"20"){
+         echo "have a good day";
+             }else{
+                 echo "good night";
+             }
+
+    if($t<"10"){
+        echo "good mrng";
+    } elseif($t<"20"){
+        echo "good day";   
+    }else{
+        echo "good night";
+    }
+    
+    echo "<br>";
+    #switch
+    $favfood="indian";
+    switch($favfood){
+        case "italian":echo "fav is italian";
+        break;
+        case "chinese":echo "fav is chinese";
+        break;
+        case "indian":echo "fav is indian";
+        break;
+        default:
+        echo "neither of these";
+    }
+    echo "<br>";
+        #loops
+
+        #while
+        $num=1;
+        while($num<=10){
+            echo "The number is :$num<br>";
+            $num++;
+        }
+        echo "<br>";
+        #do-while
+        #ex1
+        $num1=5;
+        do{
+            echo "The number is:$num1<br>";
+            $num1++;
+        }
+            while($num1<=10);
+            echo "<br>";
+            #ex2
+            $num1=5;
+            do{
+                echo "The number is:$num1<br>";
+                $num1++;
+            }
+                while($num1<=4);
+
+            echo "<br>";
+        #for loops
+        for ($x1 = 0; $x1 <= 10; $x1++) {
+            echo "The number is: $x1 <br>";
+        } 
+        #foreach
+        $colors = array("red", "green", "blue", "yellow"); 
+
+        foreach ($colors as $value) {
+            echo "$value <br>";
+        }
+
+        #functions
+
+        #UDF
+
+        function msg(){
+            echo "hey ya!";
+        }
+        msg();
+        echo "<br>";
+        #func arg & multiple args
+        function familyName($fname,$age) {
+            echo "$fname fdes. Age is $age<br>";
+        }
+        
+        familyName("mack","28");
+        familyName("jit","25");
+        familyName("roland","24");
+        familyName("jack","30");
+        echo "<br>";
+
+        function setHeight($minheight = 50) {
+            echo "The height is : $minheight <br>";
+        }
+        
+        setHeight(500);
+        setHeight(); 
+
+        #returning val
+
+        function add($x, $y) {
+            $z = $x + $y;
+            return $z;
+        }
+        
+        echo "5 + 10 = " . add(5, 10) . "<br>";
+        echo "7 + 13 = " . add(7, 13) . "<br>";
+        echo "2 + 4 = " . add(2, 4);
+        
 
 
+
+
+
+
+
+
+
+
+
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
+        echo "<br>";
    ?> 
 
 
