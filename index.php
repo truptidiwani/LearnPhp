@@ -450,24 +450,80 @@
         echo "5 + 10 = " . add(5, 10) . "<br>";
         echo "7 + 13 = " . add(7, 13) . "<br>";
         echo "2 + 4 = " . add(2, 4);
+        echo "<br>";
+
+        #Arrays
+
+        $bike = array("karizma","pulsar","maestro","access");
+        echo "I like " .$bike[0].",".$bike[1].",".$bike[2].",".$bike[3].".";
+
+        echo count($bike);
+
+        $arrlength=count($bike);
+        for($c=0;$c<$arrlength;$c++){
+            echo $bike[$c];
+            echo "<br>";
+        }
+
+        $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+        echo "Peter is " . $age['Peter'] . " years old.";
+
+        foreach($age as $x => $x_value) {
+            echo "Key=" . $x . ", Value=" . $x_value;
+        }
+            echo "<br>";
+
+        $cars = array("Volvo", "BMW", "Toyota");
+        sort($cars);
+        $clength = count($cars);
+        for($x = 0; $x < $clength; $x++) {
+            echo $cars[$x];
+            echo "<br>";
+        }
+        echo "<br>";
+        $numbers = array(4, 6, 2, 22, 11);
+sort($numbers);
+
+$arrlength = count($numbers);
+for($x = 0; $x < $arrlength; $x++) {
+    echo $numbers[$x];
+    echo "<br>";
+}
+        echo "<br>";
+        $age = array("Peter"=>"35", "Ben"=>"37", "Joe"=>"43");
+asort($age);
+
+foreach($age as $x => $x_value) {
+    echo "Key=" . $x . ", Value=" . $x_value;
+    echo "<br>";
+}
+        echo "<br>";
+
+
+        $global = 75;
+        $global1= 25; 
         
-
-
-
-
-
-
-
-
-
-
-
+        function addition() {
+            $GLOBALS['z'] = $GLOBALS['global'] + $GLOBALS['global1'];
+        }
+        addition();
+        echo $z;
         echo "<br>";
+        echo $_SERVER['PHP_SELF'];
         echo "<br>";
+        echo $_SERVER['SERVER_NAME'];
         echo "<br>";
+        echo $_SERVER['HTTP_HOST'];
         echo "<br>";
+        echo $_SERVER['HTTP_REFERER'];
         echo "<br>";
+        echo $_SERVER['HTTP_USER_AGENT'];
         echo "<br>";
+        echo $_SERVER['SCRIPT_NAME'];
+            echo "<br>";
+
+
+
    ?> 
 
 
